@@ -93,10 +93,10 @@ public class CelsiusFahrenheitConverter {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			if (FahrenheitText.isFocusOwner()) {
+			if (CelsiusText.getText().equals("")) {
 				fConvertToC(FahrenheitText);
 			} 
-			if(CelsiusText.isFocusOwner()){
+			if(FahrenheitText.getText().equals("")){
 				cConvertToF(CelsiusText);
 			}
 		}
